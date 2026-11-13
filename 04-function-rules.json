@@ -1,0 +1,4 @@
+{
+  "*": { "invoke": false },
+  "replenishmentApi": { "invoke": "auth.loginType != 'ANONYMOUS' && auth != null" }
+}

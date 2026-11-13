@@ -1,0 +1,7 @@
+{
+  "envId": "buhler-demo-d1g0ktilm3791ab46",
+  "region": "ap-shanghai",
+  "functionName": "replenishmentApi",
+  "publishableKey": "请填写控制台的Publishable Key（公开标识，勿填服务端密钥）",
+  "faceLoginUrl": ""
+}
