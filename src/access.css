@@ -1,0 +1,92 @@
+.login-methods {
+  display: flex;
+  gap: 6px;
+  margin: 19px 0 13px;
+  padding: 4px;
+  border: 1px solid #e0e7ef;
+  border-radius: 7px;
+  background: #f3f6fa;
+}
+.login-methods button {
+  display: flex;
+  flex: 1;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 5px 6px;
+  border-radius: 5px;
+  background: transparent;
+  color: #536982;
+  font-size: 12px;
+  font-weight: 650;
+}
+.login-methods button[aria-pressed="true"] { background: #fff; color: #245d95; box-shadow: 0 1px 3px #102c4814; }
+.login-face-form { display: grid; gap: 10px; }
+.login-face-form > label { display: grid; gap: 6px; color: #475d77; font-size: 13px; }
+.login-face-form input, .access-fields input, .access-fields select {
+  min-height: 40px;
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid #d9e4ee;
+  border-radius: 6px;
+  background: #f8fafc;
+  color: #243d58;
+  font: inherit;
+}
+.face-capture { display: grid; gap: 8px; max-width: 470px; }
+.face-video {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid #dae5f0;
+  border-radius: 8px;
+  background: #ecf2f8;
+  color: #4c719b;
+}
+.face-video[data-open="true"] { background: #182c43; }
+.face-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1); }
+.face-video > svg { position: relative; }
+.face-prompt { color: #33516e; font-size: 13px; font-weight: 600; }
+.face-prompt:empty { display: none; }
+.face-actions, .access-row-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.access-row-actions button { white-space: normal; text-align: left; }
+.access-row-actions .access-danger { color: #a6383c; }
+.access-settings { display: grid; gap: 16px; }
+.access-settings code { overflow-wrap: anywhere; }
+.access-muted { color: #62778e; font-size: 12px; line-height: 1.6; }
+.access-message { padding: 8px 16px; color: #305d8a; font-size: 13px; }
+.access-form { display: grid; gap: 12px; padding: 0 18px 18px; }
+.access-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.access-fields label { display: grid; gap: 5px; color: #405873; font-size: 13px; }
+.access-fields input[readonly] { background: #eef1f5; color: #64768c; }
+.access-warning { padding: 10px 12px; border-radius: 6px; background: #fff2e7; color: #8a481e; line-height: 1.55; }
+.access-check { display: flex; align-items: flex-start; gap: 7px; color: #405873; font-size: 13px; line-height: 1.55; }
+.access-check input { margin-top: 3px; }
+.access-confirm {
+  width: min(430px, calc(100% - 32px));
+  margin: auto;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--ink);
+  background: #fff;
+  box-shadow: 0 14px 52px #10223933;
+}
+.access-confirm::backdrop { background: #13233f70; }
+.access-confirm h2 { font-size: 18px; }
+.access-confirm form > p { margin: 12px 0 20px; line-height: 1.7; overflow-wrap: anywhere; }
+.access-confirm .face-actions { justify-content: flex-end; }
+.access-confirm .access-danger-button { background: #ab3b40; }
+.access-confirm .access-danger-button:hover { background: #8e3034; }
+.face-profile { max-width: 720px; }
+.face-profile-summary { display: grid; gap: 8px; margin: 0; padding: 12px; border-radius: 7px; background: #f2f6fa; }
+.face-profile-summary > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-size: 13px; }
+.face-profile-summary dt { color: #5f738a; white-space: nowrap; }
+.face-profile-summary dd { margin: 0; overflow-wrap: anywhere; text-align: right; }
+.face-profile > button { justify-self: start; }
+.face-notice { padding: 11px 12px; border: 1px solid #e0e7ee; border-radius: 7px; color: #405873; }
+.face-notice p { margin-top: 6px; white-space: pre-wrap; line-height: 1.65; }
+@media (max-width: 620px) { .access-fields { grid-template-columns: 1fr; } }
